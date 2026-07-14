@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#8B6FA0" />
+<title>From Miss to Mrs. Siti Firza — Wishes &amp; Blessings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blush:#FBF7F1;
+    --blush-deep:#F3EAD9;
+    --board:#DCC29C;
+    --board-deep:#BE9C6E;
+    --rosewood:#8B6FA0;
+    --rosewood-deep:#5B4370;
+    --dusty-rose:#E093A0;
+    --clay:#F0AE85;
+    --ink:#4A4038;
+    --ink-soft:#8B7F72;
+    --paper:#FFFDF8;
+    --note-1:#F6DBE1;
+    --note-2:#D9EAF6;
+    --note-3:#F8EBBE;
+    --note-4:#E4DAF0;
+    --note-5:#F8DFC7;
+    --line:rgba(139,111,160,0.20);
+    --shadow:0 10px 24px rgba(90,68,100,0.14);
+    --font-display:'Cormorant Garamond', serif;
+    --font-script:'Alex Brush', cursive;
+    --font-body:'Jost', sans-serif;
+    --font-hand:'Caveat', cursive;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 12% 8%, rgba(255,255,255,0.55), transparent 42%),
+      radial-gradient(circle at 88% 95%, rgba(139,111,160,0.10), transparent 48%),
+      var(--blush);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,p{ margin:0; }
+  button{ font:inherit; }
+  button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible{
+    outline:2px solid var(--rosewood); outline-offset:2px;
+  }
+  section[id]{ scroll-margin-top:54px; }
+
+  /* ---------- Sticky section nav ---------- */
+  .section-nav{
+    position:sticky; top:0; z-index:40;
+    display:flex; justify-content:center; gap:1.6rem;
+    padding:0.75rem 1rem;
+    background:rgba(251,247,241,0.88);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+    font-size:0.74rem; letter-spacing:0.09em; text-transform:uppercase;
+  }
+  .section-nav a{ color:var(--rosewood); text-decoration:none; opacity:0.72; transition:opacity 0.15s ease; }
+  .section-nav a:hover{ opacity:1; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    text-align:center;
+    padding:4.5rem 1.5rem 3rem;
+  }
+  .sprig{ position:absolute; top:12px; width:120px; height:auto; pointer-events:none; opacity:0.92; }
+  .sprig-left{ left:2%; }
+  .sprig-right{ right:2%; transform:scaleX(-1); }
+  .eyebrow{
+    font-family:var(--font-body);
+    letter-spacing:0.35em;
+    font-size:0.72rem;
+    text-transform:uppercase;
+    color:var(--rosewood);
+    opacity:0.8;
+  }
+  .hero h1{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(1.7rem,4vw,2.5rem);
+    color:var(--ink);
+    margin-top:0.7em;
+  }
+  .hero h1 em{
+    font-style:normal;
+    font-weight:600;
+    color:var(--rosewood-deep);
+  }
+  .name-script{
+    font-family:var(--font-script);
+    font-size:clamp(3.3rem,10vw,6.2rem);
+    color:var(--rosewood-deep);
+    line-height:1;
+    margin:0.15em 0 0.4em;
+  }
+  .hero .sub{
+    font-family:var(--font-body);
+    font-weight:300;
+    font-size:1rem;
+    color:var(--ink-soft);
+    max-width:480px;
+    margin:0 auto;
+    line-height:1.65;
+  }
+  .scroll-cue{
+    display:inline-block; margin-top:2.4rem;
+    font-family:var(--font-body); font-size:0.78rem; letter-spacing:0.1em;
+    color:var(--rosewood); text-decoration:none; opacity:0.75;
+    animation:bob 2.4s ease-in-out infinite;
+  }
+  .scroll-cue:hover{ opacity:1; }
+  @keyframes bob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(6px);} }
+
+  .divider{
+    display:flex; align-items:center; justify-content:center; gap:1rem;
+    color:var(--rosewood); font-size:1.05rem;
+    margin:0 auto 2.5rem; max-width:380px; padding-top:1rem;
+  }
+  .divider::before,.divider::after{ content:''; flex:1; height:1px; background:var(--line); }
+  .floral-divider{ width:110px; height:auto; flex-shrink:0; }
+
+  .section{ max-width:1080px; margin:0 auto; padding:0 1.5rem 3.5rem; text-align:center; }
+  .section-title{
+    font-family:var(--font-display);
+    font-size:clamp(1.5rem,3vw,2rem);
+    color:var(--ink);
+    font-weight:500;
+    margin-bottom:0.4rem;
+    display:flex; align-items:center; justify-content:center; gap:0.6rem;
+    flex-wrap:wrap;
+  }
+  .heading-sprig{ width:34px; height:auto; flex-shrink:0; }
+  .heading-sprig-right{ transform:scaleX(-1); }
+  .section-sub{
+    font-family:var(--font-body);
+    font-weight:300;
+    color:var(--ink-soft);
+    margin-bottom:2.2rem;
+    max-width:480px;
+    margin-left:auto; margin-right:auto;
+    line-height:1.6;
+  }
+
+  /* ---------- Photo gallery ---------- */
+  .photo-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1.1rem;
+  }
+  @media (max-width:720px){ .photo-grid{ grid-template-columns:repeat(2,1fr);} }
+
+  .photo-slot{
+    position:relative;
+    aspect-ratio:4/5;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:4px;
+    box-shadow:var(--shadow);
+    display:flex; align-items:center; justify-content:center; flex-direction:column; gap:0.4rem;
+    cursor:pointer;
+    transform:rotate(var(--rot,0deg));
+    transition:transform 0.25s ease;
+    overflow:hidden;
+    color:var(--ink-soft);
+  }
+  .photo-slot:hover{ transform:rotate(0deg) translateY(-4px); }
+  .photo-slot::before{
+    content:'';
+    position:absolute; top:-6px; left:50%; transform:translateX(-50%) rotate(-2deg);
+    width:44px; height:15px;
+    background:rgba(224,147,160,0.55);
+    z-index:2;
+  }
+  .photo-slot img{ width:100%; height:100%; object-fit:cover; }
+  .photo-slot .plus{ font-size:1.6rem; color:var(--dusty-rose); font-family:var(--font-display); }
+  .photo-slot .slot-label{ font-size:0.63rem; letter-spacing:0.08em; text-transform:uppercase; text-align:center; padding:0 0.3rem; }
+  .photo-slot.add-more-tile{
+    font-family:inherit;
+    background:transparent;
+    border:1.5px dashed var(--line);
+    box-shadow:none;
+  }
+  .photo-slot.add-more-tile::before{ display:none; }
+  .photo-slot.add-more-tile:hover{ background:rgba(139,111,160,0.06); }
+  .photo-slot.add-more-tile .plus{ color:var(--rosewood); }
+
+  /* ---------- Notes form ---------- */
+  .form-card{
+    max-width:460px;
+    margin:0 auto;
+    background:var(--paper);
+    border-radius:10px;
+    padding:1.7rem;
+    box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:0.9rem;
+    text-align:left;
+  }
+  .form-card input,.form-card textarea{
+    font-family:var(--font-body);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:0.7rem 0.9rem;
+    font-size:0.95rem;
+    color:var(--ink);
+    background:#fff;
+    resize:vertical;
+    width:100%;
+  }
+  .form-card textarea{ min-height:90px; }
+  .form-actions{ display:flex; align-items:center; gap:1.1rem; flex-wrap:wrap; }
+  .submit-btn{
+    font-family:var(--font-body);
+    font-weight:500;
+    font-size:0.95rem;
+    background:var(--rosewood);
+    color:#fff;
+    border:none;
+    padding:0.8rem 1.2rem;
+    border-radius:6px;
+    cursor:pointer;
+    transition:background 0.2s ease;
+  }
+  .submit-btn:hover{ background:var(--rosewood-deep); }
+  .submit-btn:disabled{ opacity:0.6; cursor:default; }
+  .cancel-edit-btn{
+    background:none; border:none; color:var(--ink-soft);
+    font-family:var(--font-body); font-size:0.85rem;
+    text-decoration:underline; cursor:pointer; padding:0.4rem 0;
+  }
+
+  .note-count{
+    font-family:var(--font-body);
+    font-size:0.8rem;
+    letter-spacing:0.06em;
+    color:var(--rosewood);
+    text-transform:uppercase;
+    margin:0;
+    min-height:1.2em;
+  }
+
+  /* ---------- Corkboard ---------- */
+  .board-wrap{
+    background:linear-gradient(180deg,var(--board),var(--board-deep));
+    border-radius:12px;
+    margin:1.6rem 0 2.6rem;
+    padding:2.4rem 1.4rem 2.8rem;
+    box-shadow:inset 0 2px 14px rgba(0,0,0,0.18), var(--shadow);
+  }
+  .board{
+    display:flex; flex-wrap:wrap; gap:1.3rem; justify-content:center;
+  }
+  .empty-msg{
+    font-family:var(--font-hand);
+    font-size:1.3rem;
+    color:#fff;
+    opacity:0.9;
+  }
+  .note{
+    width:clamp(150px,40vw,190px);
+    min-height:180px;
+    height:auto;
+    background:var(--note-1);
+    padding:1.6rem 1.1rem 1.1rem;
+    box-shadow:3px 6px 14px rgba(40,20,15,0.28);
+    transform:rotate(var(--rot,0deg));
+    transition:transform 0.2s ease;
+    position:relative;
+    display:flex; flex-direction:column; justify-content:space-between;
+    animation:pinIn 0.4s ease both;
+  }
+  .note:hover{ transform:rotate(0deg) translateY(-4px) scale(1.03); z-index:2; }
+  .note-pin{
+    position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+    width:15px; height:15px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #fff, var(--rosewood) 72%);
+    box-shadow:0 3px 4px rgba(0,0,0,0.35);
+  }
+  .note-actions{
+    position:absolute; top:8px; right:8px; display:flex; gap:4px;
+    opacity:0.55; transition:opacity 0.2s ease; z-index:3;
+  }
+  .note:hover .note-actions, .note:focus-within .note-actions{ opacity:1; }
+  .note-icon-btn{
+    width:23px; height:23px; border-radius:50%; border:none;
+    background:rgba(255,255,255,0.85); color:var(--ink);
+    font-size:0.68rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  }
+  .note-icon-btn:hover{ background:#fff; }
+  .note-msg{
+    font-family:var(--font-hand);
+    font-size:1.2rem;
+    line-height:1.32;
+    color:var(--ink);
+    word-break:break-word;
+    white-space:pre-wrap;
+  }
+  .note-from{
+    font-family:var(--font-hand);
+    font-weight:600;
+    font-size:1.02rem;
+    color:var(--rosewood-deep);
+    text-align:right;
+    margin-top:0.6rem;
+  }
+  @keyframes pinIn{ from{ opacity:0; transform:scale(0.8) rotate(var(--rot,0deg)); } to{ opacity:1; transform:scale(1) rotate(var(--rot,0deg)); } }
+
+  .footer{
+    text-align:center; padding:2.5rem 1.5rem 4rem;
+    font-family:var(--font-body); color:var(--ink-soft); font-size:0.9rem;
+    line-height:1.6;
+  }
+  .signature{
+    margin:1.8rem auto 0; max-width:420px;
+    padding-top:1.6rem; border-top:1px solid var(--line);
+  }
+  .footer-garland{ width:170px; height:auto; margin-bottom:0.4rem; }
+  .signature-line{
+    font-family:var(--font-body); font-size:0.82rem;
+    color:var(--ink-soft); margin:0;
+  }
+  .signature-group{
+    font-family:var(--font-script); font-size:2.3rem;
+    color:var(--rosewood-deep); line-height:1.2; margin:0.15em 0 0.4em;
+  }
+  .signature-names{
+    font-family:var(--font-body); font-size:0.78rem;
+    letter-spacing:0.02em; color:var(--ink-soft); margin:0;
+  }
+
+  .toast{
+    position:fixed; bottom:24px; left:50%;
+    transform:translate(-50%,20px);
+    background:var(--rosewood-deep); color:#fff;
+    padding:0.7rem 1.3rem; border-radius:30px;
+    font-family:var(--font-body); font-size:0.85rem;
+    opacity:0; transition:all 0.3s ease; pointer-events:none; z-index:95;
+    max-width:90vw; text-align:center;
+  }
+  .toast.show{ opacity:1; transform:translate(-50%,0); }
+
+  /* ---------- Confirm modal ---------- */
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(74,55,80,0.45);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; pointer-events:none; transition:opacity 0.2s ease;
+    z-index:90; padding:1rem;
+  }
+  .modal-overlay.show{ opacity:1; pointer-events:auto; }
+  .modal-card{
+    background:var(--paper); border-radius:14px; padding:1.7rem;
+    max-width:340px; width:100%; text-align:center;
+    box-shadow:var(--shadow);
+  }
+  .modal-card h3{ font-family:var(--font-display); font-size:1.35rem; color:var(--rosewood-deep); margin-bottom:0.6rem; font-weight:500; }
+  .modal-card p{ font-family:var(--font-body); font-size:0.9rem; color:var(--ink-soft); margin-bottom:1.4rem; }
+  .modal-actions{ display:flex; gap:0.6rem; justify-content:center; }
+  .modal-btn{ font-family:var(--font-body); font-weight:500; font-size:0.85rem; padding:0.6rem 1.15rem; border-radius:6px; border:none; cursor:pointer; }
+  .modal-btn.cancel{ background:transparent; border:1px solid var(--line); color:var(--ink-soft); }
+  .modal-btn.cancel:hover{ background:rgba(139,74,69,0.08); }
+  .modal-btn.danger{ background:#A4453D; color:#fff; }
+  .modal-btn.danger:hover{ background:#8A392F; }
+
+  /* ---------- Photo lightbox ---------- */
+  .lightbox-card{
+    position:relative;
+    background:var(--paper); border-radius:14px; padding:1.2rem;
+    max-width:min(92vw, 640px); width:100%;
+    display:flex; flex-direction:column; align-items:center; gap:0.7rem;
+    box-shadow:var(--shadow);
+  }
+  .lightbox-image-wrap{ position:relative; display:flex; align-items:center; justify-content:center; width:100%; }
+  .lightbox-image-wrap img{
+    max-width:100%; max-height:60vh;
+    border-radius:8px; object-fit:contain;
+  }
+  .lightbox-nav{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:34px; height:34px; border-radius:50%; border:none;
+    background:rgba(255,253,248,0.9); color:var(--ink);
+    font-size:1.3rem; line-height:1; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+  }
+  .lightbox-nav:hover{ background:#fff; }
+  .lightbox-prev{ left:6px; }
+  .lightbox-next{ right:6px; }
+  .lightbox-counter{ font-family:var(--font-body); font-size:0.78rem; color:var(--ink-soft); margin:0; }
+  .lightbox-close{
+    position:absolute; top:-10px; right:-10px; z-index:2;
+    width:30px; height:30px; border-radius:50%; border:2px solid var(--paper);
+    background:var(--rosewood-deep); color:#fff;
+    font-size:1.1rem; line-height:1; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .lightbox-close:hover{ background:var(--rosewood); }
+
+  @media (max-width:640px){
+    .sprig{ width:72px; top:6px; }
+    .section-nav{ gap:1rem; font-size:0.68rem; }
+    .floral-divider{ width:88px; }
+    .heading-sprig{ width:26px; }
+    .footer-garland{ width:140px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#opening">Welcome</a>
+    <a href="#photos">Memories</a>
+    <a href="#wishes">Wishes</a>
+  </nav>
+
+  <section class="hero" id="opening">
+    <svg class="sprig sprig-left" viewBox="0 0 100 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 214 C 26 168, 18 130, 42 84 C 58 54, 52 26, 46 8" stroke="var(--clay)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <path d="M30 150 C 20 140, 10 138, 2 145" stroke="var(--clay)" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M40 100 C 52 90, 62 88, 70 94" stroke="var(--clay)" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M44 55 C 34 46, 26 44, 18 50" stroke="var(--clay)" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <g transform="translate(16,206) rotate(-10) scale(1.7)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(30,178) rotate(15) scale(1.3)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(2,146) rotate(-20) scale(1.6)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(24,148) rotate(25) scale(1.2)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(18,110) rotate(5) scale(1.5)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(42,84) rotate(-15) scale(1.3)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      <g transform="translate(70,95) rotate(20) scale(1.35)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(12,66) rotate(-8) scale(1.15)"><g fill="var(--note-5)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(44,55) rotate(12) scale(1.2)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+      <g transform="translate(18,50) rotate(-18) scale(1.1)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(34,26) rotate(10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-2)"/></g>
+      <g transform="translate(46,8) rotate(0) scale(1.0)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+    </svg>
+    <svg class="sprig sprig-right" viewBox="0 0 100 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 214 C 26 168, 18 130, 42 84 C 58 54, 52 26, 46 8" stroke="var(--clay)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <path d="M30 150 C 20 140, 10 138, 2 145" stroke="var(--clay)" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M40 100 C 52 90, 62 88, 70 94" stroke="var(--clay)" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M44 55 C 34 46, 26 44, 18 50" stroke="var(--clay)" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <g transform="translate(16,206) rotate(-10) scale(1.7)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(30,178) rotate(15) scale(1.3)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(2,146) rotate(-20) scale(1.6)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(24,148) rotate(25) scale(1.2)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(18,110) rotate(5) scale(1.5)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(42,84) rotate(-15) scale(1.3)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      <g transform="translate(70,95) rotate(20) scale(1.35)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(12,66) rotate(-8) scale(1.15)"><g fill="var(--note-5)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      <g transform="translate(44,55) rotate(12) scale(1.2)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+      <g transform="translate(18,50) rotate(-18) scale(1.1)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+      <g transform="translate(34,26) rotate(10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-2)"/></g>
+      <g transform="translate(46,8) rotate(0) scale(1.0)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+    </svg>
+
+    <p class="eyebrow">Bridal Shower</p>
+    <h1>From Miss to <em>Mrs.</em></h1>
+    <p class="name-script">Siti Firza</p>
+    <p class="sub">In just a little while, you'll trade "Miss" for "Mrs." — stepping into a beautiful new chapter, held up by everyone who loves you. This page holds a little of that love: the moments, the memories, and the words written just for you. 🤍</p>
+    <a href="#photos" class="scroll-cue">&#8595; let's begin</a>
+  </section>
+
+  <section class="section photos-section" id="photos">
+    <div class="divider">
+      <svg class="floral-divider" viewBox="0 0 140 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 22 Q40 6 70 20 Q100 34 130 18" stroke="var(--clay)" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(10,22) rotate(-10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(30,12) rotate(20) scale(0.95)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(50,10) rotate(-15) scale(1.1)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(70,20) rotate(0) scale(1.25)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-2)"/></g>
+        <g transform="translate(90,11) rotate(15) scale(1.0)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(110,10) rotate(-20) scale(0.95)"><g fill="var(--note-5)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+        <g transform="translate(130,18) rotate(10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+    </div>
+    <h2 class="section-title">
+      <svg class="heading-sprig heading-sprig-left" viewBox="0 0 34 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 20 Q14 8 30 12" stroke="var(--clay)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(4,18) rotate(-10) scale(1.05)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(18,10) rotate(15) scale(0.9)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(30,12) rotate(-5) scale(1.0)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+      Cherished Moments
+      <svg class="heading-sprig heading-sprig-right" viewBox="0 0 34 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 20 Q14 8 30 12" stroke="var(--clay)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(4,18) rotate(-10) scale(1.05)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(18,10) rotate(15) scale(0.9)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(30,12) rotate(-5) scale(1.0)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+    </h2>
+    <p class="section-sub">A little gallery of the people and moments that have shaped your story, kept safe here for you to keep forever. 📷🤍</p>
+    <div id="photoGrid" class="photo-grid"></div>
+  </section>
+
+  <section class="section notes-section" id="wishes">
+    <div class="divider">
+      <svg class="floral-divider" viewBox="0 0 140 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 22 Q40 6 70 20 Q100 34 130 18" stroke="var(--clay)" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(10,22) rotate(-10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(30,12) rotate(20) scale(0.95)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(50,10) rotate(-15) scale(1.1)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(70,20) rotate(0) scale(1.25)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-2)"/></g>
+        <g transform="translate(90,11) rotate(15) scale(1.0)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(110,10) rotate(-20) scale(0.95)"><g fill="var(--note-5)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+        <g transform="translate(130,18) rotate(10) scale(1.15)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+    </div>
+    <h2 class="section-title">
+      <svg class="heading-sprig heading-sprig-left" viewBox="0 0 34 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 20 Q14 8 30 12" stroke="var(--clay)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(4,18) rotate(-10) scale(1.05)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(18,10) rotate(15) scale(0.9)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(30,12) rotate(-5) scale(1.0)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+      Wishes &amp; Blessings
+      <svg class="heading-sprig heading-sprig-right" viewBox="0 0 34 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 20 Q14 8 30 12" stroke="var(--clay)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <g transform="translate(4,18) rotate(-10) scale(1.05)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(18,10) rotate(15) scale(0.9)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(30,12) rotate(-5) scale(1.0)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+      </svg>
+    </h2>
+    <p class="section-sub">Every wish below is a piece of the love surrounding you today — written with you in mind, to hold onto long after the celebration ends. 🕊️</p>
+
+    <p id="noteCount" class="note-count">Loading&hellip;</p>
+    <div class="board-wrap">
+      <div id="board" class="board"><p class="empty-msg">Loading the board&hellip;</p></div>
+    </div>
+
+    <form id="noteForm" class="form-card">
+      <input id="nameInput" type="text" maxlength="40" placeholder="Your name" aria-label="Your name" aria-required="true">
+      <textarea id="messageInput" maxlength="220" placeholder="Write your wishes and blessings for Firza here..." aria-label="Your wishes and blessings" aria-required="true"></textarea>
+      <div class="form-actions">
+        <button id="submitBtn" type="button" class="submit-btn">Pin to the Board 💌</button>
+        <button id="cancelEditBtn" type="button" class="cancel-edit-btn" hidden>Cancel edit</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>This whole page is made of love for you, Firza.<br>May your life as Mrs. hold just as much. 🌸🤍</p>
+    <div class="signature">
+      <svg class="footer-garland" viewBox="0 0 168 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 16 Q45 2 84 14 Q123 26 162 12" stroke="var(--clay)" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <g transform="translate(6,16) rotate(-10) scale(1.0)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(28,8) rotate(18) scale(0.85)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-3)"/></g>
+        <g transform="translate(48,4) rotate(-8) scale(1.0)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-4)"/></g>
+        <g transform="translate(66,9) rotate(12) scale(0.8)"><g fill="var(--note-5)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+        <g transform="translate(84,14) rotate(0) scale(1.1)"><g fill="var(--clay)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-2)"/></g>
+        <g transform="translate(102,8) rotate(-15) scale(0.8)"><g fill="var(--note-3)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+        <g transform="translate(120,4) rotate(10) scale(1.0)"><g fill="var(--dusty-rose)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--note-5)"/></g>
+        <g transform="translate(140,9) rotate(-12) scale(0.85)"><g fill="var(--note-2)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--clay)"/></g>
+        <g transform="translate(162,12) rotate(8) scale(1.0)"><g fill="var(--note-4)"><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(0)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(72)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(144)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(216)"/><ellipse cx="0" cy="-3.4" rx="1.6" ry="2.6" transform="rotate(288)"/></g><circle r="1.4" fill="var(--dusty-rose)"/></g>
+      </svg>
+      <p class="signature-line">With love, from</p>
+      <p class="signature-group">Wanita Tenggara</p>
+      <p class="signature-names">Acit &middot; Almira &middot; Astrid &middot; Kinanti &middot; Nabilah &middot; Saarah &middot; Tianira</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal-overlay" id="confirmOverlay">
+    <div class="modal-card">
+      <h3 id="confirmTitle">Remove this?</h3>
+      <p id="confirmText">This can't be undone.</p>
+      <div class="modal-actions">
+        <button id="confirmCancelBtn" class="modal-btn cancel" type="button">Cancel</button>
+        <button id="confirmOkBtn" class="modal-btn danger" type="button">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="photoLightboxOverlay">
+    <div class="lightbox-card">
+      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Close">&times;</button>
+      <div class="lightbox-image-wrap">
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrevBtn" aria-label="Previous photo">&#8249;</button>
+        <img id="lightboxImg" src="" alt="A cherished memory">
+        <button type="button" class="lightbox-nav lightbox-next" id="lightboxNextBtn" aria-label="Next photo">&#8250;</button>
+      </div>
+      <p class="lightbox-counter" id="lightboxCounter"></p>
+      <div class="modal-actions">
+        <button type="button" class="modal-btn cancel" id="lightboxReplaceBtn">Replace photo</button>
+        <button type="button" class="modal-btn danger" id="lightboxDeleteBtn">Delete photo</button>
+      </div>
+    </div>
+  </div>
+
+  <input type="file" id="photoFileInput" accept="image/*" style="display:none">
+
+<script>
+  const NOTE_PREFIX = 'note_';
+  const PHOTO_PREFIX = 'photo_';
+  const NOTE_COLORS = ['var(--note-1)','var(--note-2)','var(--note-3)','var(--note-4)','var(--note-5)'];
+
+  function hasStorage(){ return typeof window.storage !== 'undefined' && !!window.storage; }
+
+  function uid(){
+    return Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,8);
+  }
+  function hashCode(str){
+    let h = 0;
+    for(let i=0;i<str.length;i++){ h = ((h<<5)-h) + str.charCodeAt(i); h |= 0; }
+    return Math.abs(h);
+  }
+  let toastTimeout;
+  function showToast(msg){
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(()=>toast.classList.remove('show'), 2600);
+  }
+  window.addEventListener('error', function(e){
+    console.error('Unhandled error:', e.error || e.message);
+    showToast("Something went wrong — please try again.");
+  });
+
+  /* ---------------- Confirm modal ---------------- */
+  let pendingConfirmAction = null;
+  function openConfirm(title, text, action){
+    document.getElementById('confirmTitle').textContent = title;
+    document.getElementById('confirmText').textContent = text;
+    pendingConfirmAction = action;
+    document.getElementById('confirmOverlay').classList.add('show');
+  }
+  function closeConfirm(){
+    document.getElementById('confirmOverlay').classList.remove('show');
+    pendingConfirmAction = null;
+  }
+  document.getElementById('confirmCancelBtn').addEventListener('click', closeConfirm);
+  document.getElementById('confirmOverlay').addEventListener('click', (e) => {
+    if(e.target.id === 'confirmOverlay') closeConfirm();
+  });
+  document.getElementById('confirmOkBtn').addEventListener('click', () => {
+    const action = pendingConfirmAction;
+    closeConfirm();
+    if(action) action();
+  });
+  document.addEventListener('keydown', (e) => {
+    if(document.getElementById('photoLightboxOverlay').classList.contains('show')){
+      if(e.key === 'ArrowRight') lightboxNext();
+      if(e.key === 'ArrowLeft') lightboxPrev();
+    }
+    if(e.key !== 'Escape') return;
+    closeConfirm();
+    closeLightbox();
+  });
+
+  /* ---------------- Notes ---------------- */
+  let editingKey = null;
+
+  async function loadNotes(){
+    if(!hasStorage()){
+      renderNotes([]);
+      document.getElementById('noteCount').textContent = '';
+      return;
+    }
+    try{
+      const listRes = await window.storage.list(NOTE_PREFIX, true);
+      const keys = (listRes && listRes.keys) || [];
+      const results = await Promise.all(keys.map(k => window.storage.get(k, true).catch(()=>null)));
+      const notes = results
+        .filter(r => r && r.value)
+        .map(r => { try{ return { key:r.key, ...JSON.parse(r.value) }; } catch(e){ return null; } })
+        .filter(Boolean)
+        .sort((a,b) => (a.ts||0) - (b.ts||0));
+      renderNotes(notes);
+    }catch(e){
+      console.error('loadNotes failed', e);
+    }
+  }
+
+  function updateCounter(count){
+    const el = document.getElementById('noteCount');
+    if(count === 0){ el.textContent = ''; return; }
+    el.textContent = count + (count === 1 ? ' wish' : ' wishes') + ' pinned so far \uD83D\uDC95';
+  }
+
+  function renderNotes(notes){
+    const board = document.getElementById('board');
+    updateCounter(notes.length);
+    board.innerHTML = '';
+    if(notes.length === 0){
+      const empty = document.createElement('p');
+      empty.className = 'empty-msg';
+      empty.textContent = hasStorage()
+        ? 'The board is waiting for its first wish\u2026 \uD83D\uDD4A\uFE0F'
+        : 'Open this as a live artifact to start pinning wishes.';
+      board.appendChild(empty);
+      return;
+    }
+    notes.forEach(n => {
+      const div = document.createElement('div');
+      div.className = 'note';
+      const h = hashCode(n.key);
+      const rot = (h % 9) - 4;
+      const colorIdx = h % NOTE_COLORS.length;
+      div.style.setProperty('--rot', rot + 'deg');
+      div.style.background = NOTE_COLORS[colorIdx];
+
+      const pin = document.createElement('span');
+      pin.className = 'note-pin';
+
+      const actions = document.createElement('div');
+      actions.className = 'note-actions';
+      const editBtn = document.createElement('button');
+      editBtn.type = 'button'; editBtn.className = 'note-icon-btn'; editBtn.title = 'Edit';
+      editBtn.textContent = '\u270E';
+      editBtn.addEventListener('click', () => enterEditMode(n));
+      const delBtn = document.createElement('button');
+      delBtn.type = 'button'; delBtn.className = 'note-icon-btn'; delBtn.title = 'Delete';
+      delBtn.textContent = '\u2715';
+      delBtn.addEventListener('click', () => {
+        openConfirm('Remove this wish?', "This can't be undone.", async () => {
+          try{
+            await window.storage.delete(n.key, true);
+            if(editingKey === n.key) exitEditMode();
+            await loadNotes();
+            showToast('Wish removed.');
+          }catch(e){
+            console.error(e);
+            showToast("Couldn't remove that — please try again.");
+          }
+        });
+      });
+      actions.appendChild(editBtn);
+      actions.appendChild(delBtn);
+
+      const msg = document.createElement('p');
+      msg.className = 'note-msg';
+      msg.textContent = n.message;
+
+      const from = document.createElement('p');
+      from.className = 'note-from';
+      from.textContent = n.name;
+
+      div.appendChild(pin);
+      div.appendChild(actions);
+      div.appendChild(msg);
+      div.appendChild(from);
+      board.appendChild(div);
+    });
+  }
+
+  function enterEditMode(note){
+    editingKey = note.key;
+    document.getElementById('nameInput').value = note.name;
+    document.getElementById('messageInput').value = note.message;
+    document.getElementById('submitBtn').textContent = 'Update Wish \uD83D\uDC8C';
+    document.getElementById('cancelEditBtn').hidden = false;
+    document.getElementById('noteForm').scrollIntoView({ behavior:'smooth', block:'center' });
+    document.getElementById('nameInput').focus();
+  }
+  function exitEditMode(){
+    editingKey = null;
+    document.getElementById('noteForm').reset();
+    document.getElementById('submitBtn').textContent = 'Pin to the Board \uD83D\uDC8C';
+    document.getElementById('cancelEditBtn').hidden = true;
+  }
+  document.getElementById('cancelEditBtn').addEventListener('click', exitEditMode);
+
+  async function submitNote(){
+    const nameInput = document.getElementById('nameInput');
+    const msgInput = document.getElementById('messageInput');
+    const btn = document.getElementById('submitBtn');
+    const name = nameInput.value.trim();
+    const message = msgInput.value.trim();
+
+    if(!name || !message){
+      showToast('Add your name and a message first \u2728');
+      return;
+    }
+
+    const isEditing = !!editingKey;
+    btn.disabled = true;
+    btn.textContent = isEditing ? 'Updating...' : 'Pinning...';
+    const key = editingKey || (NOTE_PREFIX + uid());
+    try{
+      await window.storage.set(key, JSON.stringify({ name, message, ts: Date.now() }), true);
+      exitEditMode();
+      await loadNotes();
+      showToast(isEditing ? 'Your wish has been updated \uD83C\uDF38' : 'Your wishes are pinned to the board! \uD83C\uDF38');
+    }catch(e){
+      console.error(e);
+      showToast("Couldn't pin that — please try again.");
+      btn.textContent = isEditing ? 'Update Wish \uD83D\uDC8C' : 'Pin to the Board \uD83D\uDC8C';
+    }finally{
+      btn.disabled = false;
+      if(!editingKey) btn.textContent = 'Pin to the Board \uD83D\uDC8C';
+    }
+  }
+
+  /* ---------------- Photos ---------------- */
+  let currentPhotos = [];
+  let visiblePhotoSlots = 3;
+
+  function parsePhotoEntry(key, raw){
+    try{
+      const parsed = JSON.parse(raw);
+      if(parsed && parsed.dataUrl) return { key, dataUrl: parsed.dataUrl, ts: parsed.ts || 0 };
+    }catch(e){ /* legacy entries were stored as a bare data URL string */ }
+    if(typeof raw === 'string' && raw.indexOf('data:') === 0){
+      return { key, dataUrl: raw, ts: 0 };
+    }
+    return null;
+  }
+
+  function renderPhotoGrid(){
+    const grid = document.getElementById('photoGrid');
+    grid.innerHTML = '';
+
+    currentPhotos.forEach((photo, i) => {
+      const slot = document.createElement('div');
+      slot.className = 'photo-slot filled';
+      slot.style.setProperty('--rot', (((i % 2 === 0) ? -1 : 1) * (2 + (i % 5))) + 'deg');
+      const img = document.createElement('img');
+      img.src = photo.dataUrl;
+      img.alt = 'A cherished memory — click to view larger';
+      slot.appendChild(img);
+      slot.addEventListener('click', () => openPhotoLightbox(i));
+      grid.appendChild(slot);
+    });
+
+    const emptyCount = Math.max(visiblePhotoSlots - currentPhotos.length, 0);
+    for(let i = 0; i < emptyCount; i++){
+      const idx = currentPhotos.length + i;
+      const slot = document.createElement('div');
+      slot.className = 'photo-slot';
+      slot.style.setProperty('--rot', (((idx % 2 === 0) ? -1 : 1) * (2 + (idx % 5))) + 'deg');
+      const plus = document.createElement('span');
+      plus.className = 'plus';
+      plus.textContent = '+';
+      const label = document.createElement('span');
+      label.className = 'slot-label';
+      label.textContent = 'Add Photo';
+      slot.appendChild(plus);
+      slot.appendChild(label);
+      slot.addEventListener('click', () => triggerUpload(null));
+      grid.appendChild(slot);
+    }
+
+    const addMore = document.createElement('button');
+    addMore.type = 'button';
+    addMore.className = 'photo-slot add-more-tile';
+    const moreIdx = visiblePhotoSlots;
+    addMore.style.setProperty('--rot', (((moreIdx % 2 === 0) ? -1 : 1) * (2 + (moreIdx % 5))) + 'deg');
+    const morePlus = document.createElement('span');
+    morePlus.className = 'plus';
+    morePlus.textContent = '+';
+    const moreLabel = document.createElement('span');
+    moreLabel.className = 'slot-label';
+    moreLabel.textContent = 'Add More Photos';
+    addMore.appendChild(morePlus);
+    addMore.appendChild(moreLabel);
+    addMore.addEventListener('click', () => {
+      visiblePhotoSlots += 3;
+      renderPhotoGrid();
+    });
+    grid.appendChild(addMore);
+  }
+
+  async function loadPhotos(){
+    if(!hasStorage()){ currentPhotos = []; renderPhotoGrid(); return; }
+    try{
+      const listRes = await window.storage.list(PHOTO_PREFIX, true);
+      const keys = (listRes && listRes.keys) || [];
+      const results = await Promise.all(keys.map(k => window.storage.get(k, true).catch(()=>null)));
+      const photos = results
+        .filter(r => r && r.value)
+        .map(r => parsePhotoEntry(r.key, r.value))
+        .filter(Boolean)
+        .sort((a,b) => (a.ts||0) - (b.ts||0));
+      currentPhotos = photos;
+      visiblePhotoSlots = Math.max(visiblePhotoSlots, photos.length, 3);
+      renderPhotoGrid();
+    }catch(e){
+      console.error('loadPhotos failed', e);
+    }
+  }
+
+  /* ---- Lightbox with prev/next ---- */
+  let lightboxIndex = null;
+  function openPhotoLightbox(index){
+    if(index < 0 || index >= currentPhotos.length) return;
+    lightboxIndex = index;
+    renderLightbox();
+    document.getElementById('photoLightboxOverlay').classList.add('show');
+  }
+  function renderLightbox(){
+    const photo = currentPhotos[lightboxIndex];
+    if(!photo){ closeLightbox(); return; }
+    document.getElementById('lightboxImg').src = photo.dataUrl;
+    document.getElementById('lightboxCounter').textContent = currentPhotos.length > 1
+      ? (lightboxIndex + 1) + ' / ' + currentPhotos.length
+      : '';
+    const showNav = currentPhotos.length > 1;
+    document.getElementById('lightboxPrevBtn').style.display = showNav ? 'flex' : 'none';
+    document.getElementById('lightboxNextBtn').style.display = showNav ? 'flex' : 'none';
+  }
+  function closeLightbox(){
+    document.getElementById('photoLightboxOverlay').classList.remove('show');
+    lightboxIndex = null;
+  }
+  function lightboxNext(){
+    if(lightboxIndex === null || !currentPhotos.length) return;
+    lightboxIndex = (lightboxIndex + 1) % currentPhotos.length;
+    renderLightbox();
+  }
+  function lightboxPrev(){
+    if(lightboxIndex === null || !currentPhotos.length) return;
+    lightboxIndex = (lightboxIndex - 1 + currentPhotos.length) % currentPhotos.length;
+    renderLightbox();
+  }
+  document.getElementById('lightboxNextBtn').addEventListener('click', lightboxNext);
+  document.getElementById('lightboxPrevBtn').addEventListener('click', lightboxPrev);
+  document.getElementById('lightboxCloseBtn').addEventListener('click', closeLightbox);
+  document.getElementById('photoLightboxOverlay').addEventListener('click', (e) => {
+    if(e.target.id === 'photoLightboxOverlay') closeLightbox();
+  });
+  document.getElementById('lightboxReplaceBtn').addEventListener('click', () => {
+    const photo = currentPhotos[lightboxIndex];
+    closeLightbox();
+    if(photo) triggerUpload(photo.key);
+  });
+  document.getElementById('lightboxDeleteBtn').addEventListener('click', () => {
+    const photo = currentPhotos[lightboxIndex];
+    closeLightbox();
+    if(photo){
+      openConfirm('Remove this photo?', "This can't be undone.", () => removePhoto(photo.key));
+    }
+  });
+
+  /* ---- Upload / replace / delete ---- */
+  let pendingReplaceKey = null;
+  function triggerUpload(replaceKey){
+    pendingReplaceKey = replaceKey || null;
+    const input = document.getElementById('photoFileInput');
+    input.value = '';
+    input.click();
+  }
+  document.getElementById('photoFileInput').addEventListener('change', (e) => {
+    const replaceKey = pendingReplaceKey;
+    pendingReplaceKey = null;
+    handleFile(e, replaceKey);
+  });
+
+  function handleFile(e, replaceKey){
+    const file = e.target.files[0];
+    if(!file) return;
+    if(!file.type.startsWith('image/')){ showToast('Please choose an image file.'); return; }
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => savePhoto(replaceKey, compressImage(img));
+      img.onerror = () => showToast("Couldn't read that photo — please try another.");
+      img.src = ev.target.result;
+    };
+    reader.onerror = () => showToast("Couldn't read that photo — please try another.");
+    reader.readAsDataURL(file);
+  }
+
+  function compressImage(img){
+    const maxW = 900;
+    const scale = Math.min(1, maxW / img.width);
+    const w = Math.round(img.width * scale);
+    const h = Math.round(img.height * scale);
+    const canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, w, h);
+    return canvas.toDataURL('image/jpeg', 0.72);
+  }
+
+  async function savePhoto(replaceKey, dataUrl){
+    if(!hasStorage()){
+      showToast('This only saves when opened as a live artifact — share the link, not the downloaded file.');
+      return;
+    }
+    showToast(replaceKey ? 'Replacing photo...' : 'Adding your photo...');
+    const existing = replaceKey ? currentPhotos.find(p => p.key === replaceKey) : null;
+    const key = replaceKey || (PHOTO_PREFIX + uid());
+    const ts = existing ? existing.ts : Date.now();
+    try{
+      await window.storage.set(key, JSON.stringify({ dataUrl, ts }), true);
+      await loadPhotos();
+      showToast(replaceKey ? 'Photo replaced \uD83D\uDCF8' : 'Photo added to the wall \uD83D\uDCF8');
+    }catch(e){
+      console.error(e);
+      showToast('Upload failed — try a smaller photo or try again.');
+    }
+  }
+
+  async function removePhoto(key){
+    try{
+      await window.storage.delete(key, true);
+      await loadPhotos();
+      showToast('Photo removed.');
+    }catch(e){
+      console.error(e);
+      showToast("Couldn't remove that — please try again.");
+    }
+  }
+
+  /* ---------------- Polling ---------------- */
+  let pollTimer = null;
+  function startPolling(){
+    stopPolling();
+    pollTimer = setInterval(() => { loadNotes(); loadPhotos(); }, 15000);
+  }
+  function stopPolling(){
+    if(pollTimer) clearInterval(pollTimer);
+    pollTimer = null;
+  }
+  document.addEventListener('visibilitychange', () => {
+    if(document.hidden){ stopPolling(); }
+    else{ loadNotes(); loadPhotos(); startPolling(); }
+  });
+
+  /* ---------------- Init ---------------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    renderPhotoGrid();
+    loadPhotos();
+    loadNotes();
+    startPolling();
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      submitNote();
+    });
+    document.getElementById('noteForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      submitNote();
+    });
+  });
+</script>
+</body>
+</html>
