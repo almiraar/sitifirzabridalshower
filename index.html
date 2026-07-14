@@ -598,6 +598,58 @@
 
   <input type="file" id="photoFileInput" accept="image/*" style="display:none">
 
+<script type="module">
+  // ---- Firebase-backed replacement for window.storage ----
+  // Mimics the get/set/delete/list interface the rest of this page expects,
+  // but persists to Firestore so every guest's phone sees the same data.
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js';
+  import {
+    getFirestore, collection, doc, setDoc, getDoc, getDocs, deleteDoc,
+    query, where, documentId
+  } from 'https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDHpqqTl7miy5zZZyMJK6byrdIce0siuAs",
+    authDomain: "siti-firza-bridal-shower.firebaseapp.com",
+    projectId: "siti-firza-bridal-shower",
+    storageBucket: "siti-firza-bridal-shower.firebasestorage.app",
+    messagingSenderId: "677821028956",
+    appId: "1:677821028956:web:370f5de106d3d6b6802499"
+  };
+
+  const fbApp = initializeApp(firebaseConfig);
+  const db = getFirestore(fbApp);
+  const COLLECTION = 'board_data';
+
+  window.storage = {
+    async get(key) {
+      const snap = await getDoc(doc(db, COLLECTION, key));
+      if (!snap.exists()) throw new Error('not found');
+      return { key, value: snap.data().value, shared: true };
+    },
+    async set(key, value) {
+      await setDoc(doc(db, COLLECTION, key), { value });
+      return { key, value, shared: true };
+    },
+    async delete(key) {
+      await deleteDoc(doc(db, COLLECTION, key));
+      return { key, deleted: true, shared: true };
+    },
+    async list(prefix) {
+      const p = prefix || '';
+      const q = query(
+        collection(db, COLLECTION),
+        where(documentId(), '>=', p),
+        where(documentId(), '<', p + '\uf8ff')
+      );
+      const snap = await getDocs(q);
+      const keys = [];
+      snap.forEach(d => keys.push(d.id));
+      return { keys, prefix: p, shared: true };
+    }
+  };
+</script>
+
 <script>
   const NOTE_PREFIX = 'note_';
   const PHOTO_PREFIX = 'photo_';
