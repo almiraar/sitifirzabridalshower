@@ -318,7 +318,7 @@
     opacity:0.9;
   }
   .note{
-    width:clamp(160px,42vw,210px);
+    width:clamp(180px,45vw,260px);
     min-height:180px;
     height:auto;
     background:var(--note-1);
@@ -350,8 +350,8 @@
   .note-icon-btn:hover{ background:#fff; }
   .note-msg{
     font-family:var(--font-hand);
-    font-size:1.2rem;
-    line-height:1.32;
+    font-size:1.05rem;
+    line-height:1.28;
     color:var(--ink);
     word-break:break-word;
     white-space:pre-wrap;
@@ -359,7 +359,7 @@
   .note-from{
     font-family:var(--font-hand);
     font-weight:600;
-    font-size:1.02rem;
+    font-size:0.92rem;
     color:var(--rosewood-deep);
     text-align:right;
     margin-top:0.6rem;
@@ -497,9 +497,9 @@
     .eyebrow{ font-size:0.85rem; }
     .hero .sub{ font-size:1.15rem; max-width:640px; }
     .section-sub{ font-size:1.1rem; max-width:640px; }
-    .note-msg{ font-size:1.35rem; }
-    .note-from{ font-size:1.15rem; }
-    .note{ width:clamp(210px,18vw,280px); min-height:210px; }
+    .note-msg{ font-size:1.15rem; }
+    .note-from{ font-size:1rem; }
+    .note{ width:clamp(240px,20vw,320px); min-height:200px; }
     .signature-group{ font-size:2.6rem; }
     .signature-line, .signature-names{ font-size:0.9rem; }
     .section{ max-width:1240px; }
@@ -536,6 +536,9 @@
       display:none !important;
     }
     .note, .photo-slot, .board-wrap{ break-inside:avoid; }
+    .note{ width:340px !important; min-height:auto; }
+    .note-msg{ font-size:0.95rem !important; line-height:1.24 !important; }
+    .note-from{ font-size:0.85rem !important; }
     .hero{ padding-top:2rem; }
   }
 </style>
