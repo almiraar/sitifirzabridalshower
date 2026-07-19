@@ -356,6 +356,20 @@
     word-break:break-word;
     white-space:pre-wrap;
   }
+  .see-more-btn{
+    display:inline;
+    background:none;
+    border:none;
+    padding:0;
+    margin:0;
+    font-family:var(--font-body);
+    font-size:0.72rem;
+    font-weight:600;
+    color:var(--rosewood-deep);
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  .see-more-btn:hover{ opacity:0.7; }
   .note-from{
     font-family:var(--font-hand);
     font-weight:600;
@@ -532,7 +546,8 @@
     body{ background:var(--blush); }
     .section-nav, .scroll-cue, .form-card,
     .note-actions, .cancel-edit-btn, .remove-empty-slot, .photo-slot.add-more-tile,
-    .photo-slot:not(.filled), .toast, .modal-overlay, .print-btn, .print-hint{
+    .photo-slot:not(.filled), .toast, .modal-overlay, .print-btn, .print-hint,
+    .see-more-btn{
       display:none !important;
     }
     .note, .photo-slot, .board-wrap{ break-inside:avoid; }
@@ -1025,6 +1040,9 @@
 
   /* ---------------- Notes ---------------- */
   let editingKey = null;
+  let expandedNotes = new Set();
+  let lastLoadedNotes = [];
+  const NOTE_PREVIEW_WORDS = 85;
 
   async function loadNotes(){
     if(!hasStorage()){
@@ -1040,6 +1058,7 @@
         .map(r => { try{ return { key:r.key, ...JSON.parse(r.value) }; } catch(e){ return null; } })
         .filter(Boolean)
         .sort((a,b) => (a.ts||0) - (b.ts||0));
+      lastLoadedNotes = notes;
       renderNotes(notes);
     }catch(e){
       console.error('loadNotes failed', e);
@@ -1097,7 +1116,37 @@
 
       const msg = document.createElement('p');
       msg.className = 'note-msg';
-      msg.textContent = n.message;
+      const words = n.message.trim().split(/\s+/);
+      const isLong = words.length > NOTE_PREVIEW_WORDS;
+      const isExpanded = expandedNotes.has(n.key);
+      if(isLong && !isExpanded){
+        msg.textContent = words.slice(0, NOTE_PREVIEW_WORDS).join(' ') + '\u2026 ';
+        const moreBtn = document.createElement('button');
+        moreBtn.type = 'button';
+        moreBtn.className = 'see-more-btn';
+        moreBtn.textContent = 'See more';
+        moreBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          expandedNotes.add(n.key);
+          renderNotes(notes);
+        });
+        msg.appendChild(moreBtn);
+      }else{
+        msg.textContent = n.message;
+        if(isLong){
+          msg.appendChild(document.createTextNode(' '));
+          const lessBtn = document.createElement('button');
+          lessBtn.type = 'button';
+          lessBtn.className = 'see-more-btn';
+          lessBtn.textContent = 'See less';
+          lessBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            expandedNotes.delete(n.key);
+            renderNotes(notes);
+          });
+          msg.appendChild(lessBtn);
+        }
+      }
 
       const from = document.createElement('p');
       from.className = 'note-from';
@@ -1160,7 +1209,7 @@
   }
 
   /* ---------------- Photos ---------------- */
-  const MAX_PHOTOS = 15;
+  const MAX_PHOTOS = 28;
   let currentPhotos = [];
   let visiblePhotoSlots = 3;
   let dragSrcIndex = null;
@@ -1461,6 +1510,11 @@
   document.getElementById('printBtn').addEventListener('click', () => {
     try{ window.print(); }
     catch(e){ showToast('Printing isn\u2019t available here.'); }
+  });
+  window.addEventListener('beforeprint', () => {
+    if(!lastLoadedNotes.length) return;
+    lastLoadedNotes.forEach(n => expandedNotes.add(n.key));
+    renderNotes(lastLoadedNotes);
   });
 
   /* ---------------- Polling ---------------- */
